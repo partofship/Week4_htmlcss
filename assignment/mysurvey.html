@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<style>
+body{
+    width: 500px;
+    }
+#else_writing{
+    width: 240px;
+    height: 100px;
+    resize: none;
+}
+
+</style>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>여행 선호 조사</title>
+        <link href="mysurveystyle.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1></h1>
+            <p></p>
+        </header>
+        <hr>
+        <main>
+            <form>
+                <fieldset>
+                    <legend><h3>개인정보</h3></legend>
+                    <label for = "name">Given Name</label><br>
+                    <input type = "text" id="namegiven" placeholder = "이름">
+                    <br>
+                    <label for = "name">Surname</label><br>
+                    <input type = "text" id="surname" placeholder = "성">
+                    <br>
+                    <label for = "name">이메일</label><br>
+                    <input type = "text" id="email" placeholder = "메일 주소 직접 입력">
+                </fieldset>
+                <fieldset>
+                    <legend><h3>설문내역</h3></legend>
+                    <div class="agegroup">
+                        <p>연령대</p>
+                        <input type="radio" id="age_10" name = "age">
+                        <label for = "age_10">10대</label>
+                        <input type="radio" id="age_20" name = "age">
+                        <label for = "age_20">20대</label>
+                        <input type="radio" id="age_30" name = "age">
+                        <label for = "age_30">30대</label>
+                        <input type="radio" id="age_40" name = "age">
+                        <label for = "age_40">40대</label>
+                        <input type="radio" id="age_50" name = "age">
+                        <label for = "age_50">50대</label>
+                    </div>
+                    <div class="gamequestion">
+                        <p id = "traveltype">선호하는 게임 종류</p>
+                        <input type="checkbox" id = "game_RTS" name = "game">
+                        <label for = "game_RTS">RTS</label><br>
+                        <input type="checkbox" id = "game_FPS" name = "game">
+                        <label for = "game_FPS">FPS</label><br>
+                        <input type="checkbox" id = "game_RPG" name = "game">
+                        <label for = "game_RPG">RPG 종류</label><br>
+                        <input type="checkbox" id = "game_Rhythm" name = "game">
+                        <label for = "game_Rhythm">리듬</label><br>
+                        <input type="checkbox" id = "game_sports" name = "game">
+                        <label for = "game_sports">스포츠</label><br>
+                        <input type="checkbox" id = "game_arcade" name = "game">
+                        <label for = "game_arcade">아케이드</label><br>
+                        <input type="checkbox" id = "game_simulation" name = "game">
+                        <label for = "game_simulation">시뮬레이션</label><br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><h3>기타 의견</h3></legend>
+                    <input type = "textarea" id = "else_writing" name = "freeopinion">
+                </fieldset>
+                <input type = "submit">
+            </form>
+        </main>
+        <hr>
+        <footer><p></p>
+        </footer>        
+    </body>
+</html>
