@@ -14,22 +14,20 @@
     </head>
     <body>
         <h1 id = "name"></h1>
-        <p id = "hobby"></p>
-        <p id = "song"></p>
-
+        <p id = "favnimal"></p>
+        <p id = "fruit"></p>
         <script>
             const nameElement = document.querySelector("#name")
             let name = prompt("당신의 이름은?")
-            nameElement.textContent = name
 
-            const hobbyElement = document.querySelector("#hobby")
-            let hobby = prompt("당신의 취미는?")
-            hobbyElement.textContent = `취미는 ${hobby} 입니다.`
+            const animalElement = document.querySelector("#favnimal")
+            let favnimal = prompt("좋아하는 동물은?")
 
-            const songElement = document.querySelector("#song")
-            .textContent = `좋아하는 곡은 ${prompt("좋아하는 곡은?")}입니다.`
+            const songElement = document.querySelector("#fruit")
+            let fruit = prompt("좋아하는 과일은?")
+
+            window.alert(`${name}가 좋아하는 건: ${favnimal} , ${fruit}`)
+
         </script>
     </body>
 </html>
-
-이름 h1, 좋아하는 동물 p, 좋아하는 과일 p. 입력 모두 promptx로 받을것
