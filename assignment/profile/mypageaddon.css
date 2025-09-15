@@ -1,0 +1,14 @@
+#simpletitle{
+    text-align: center;
+    border: rgb(0, 17, 92) dashed;
+}
+#musics{
+    margin: auto;
+    text-decoration: none;
+}
+#rock{
+    border: rgba(82, 0, 0, 0.6) dotted;
+}
+#housemusic{
+    border: rgba(0, 94, 201, 0.6) dotted;
+}
